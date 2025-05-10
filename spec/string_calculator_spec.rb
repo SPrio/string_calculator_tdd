@@ -16,13 +16,13 @@ RSpec.describe StringCalculator do
       end
     end
 
-    context 'when the input is space separated numbers in a string' do
+    context 'when the input is comma separated numbers in a string' do
       it 'returns sum if given 2 numbers' do
-        expect(calc.add('1 2')).to eq(3)
+        expect(calc.add('1,2')).to eq(3)
       end
 
       it 'returns their sum if given more than 2 numbers' do
-        expect(calc.add('1 2 3 4 5')).to eq(15)
+        expect(calc.add('1,2,3,4,5')).to eq(15)
       end
     end
   end
