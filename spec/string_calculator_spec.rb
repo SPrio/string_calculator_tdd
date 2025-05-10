@@ -15,5 +15,11 @@ RSpec.describe StringCalculator do
         expect(calc.add('5')).to eq(5)
       end
     end
+
+    context 'when the input is space separated numbers in a string' do
+      it 'returns sum if given 2 numbers' do
+        expect(calc.add('1 2')).to eq(3)
+      end
+    end
   end
 end
